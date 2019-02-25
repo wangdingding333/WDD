@@ -1,0 +1,116 @@
+body {
+  background-color: #fff;
+}
+
+.cart {
+  width: 1240px;
+  margin: 19px auto 29px;
+  border: 1px solid #DDD;
+}
+.cart .hd {
+  height: 50px;
+  background: #FFF;
+  border-bottom: 1px solid #DDD;
+  line-height: 50px;
+  text-indent: 20px;
+}
+.cart .hd h3 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #000;
+}
+
+.cartbody {
+  padding: 15px;
+}
+.cartbody .emptylist {
+  width: 100%;
+  background-color: #fff;
+  background: url(http://static.i360mall.com/mall/images/cart_empty.jpg) no-repeat;
+}
+
+.cartlist {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.cartlist .title {
+  background-color: #F9FAFB;
+  height: 38px;
+  border: 1px solid #DDD;
+}
+.cartlist .title input, .cartlist .cartdata input {
+  outline: none;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.cartlist .title div, .cartlist .cartdata div {
+  text-align: center;
+  display: inline-block;
+  line-height: 38px;
+  font-size: 12px;
+  color: #666;
+  vertical-align: middle;
+}
+.cartlist .title .s1, .cartlist .cartdata .s1 {
+  width: 126px;
+}
+.cartlist .title .s2, .cartlist .cartdata .s2 {
+  width: 565px;
+  padding-left: 20px;
+}
+.cartlist .cartdata {
+  padding: 10px 0;
+  border: 1px solid #DDD;
+  border-top: none;
+}
+.cartlist .cartdata .s2 img {
+  vertical-align: middle;
+  border: none;
+  font-size: 0;
+  float: left;
+  display: inline-block;
+}
+.cartlist .cartdata .s2 p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cartlist .cartdata .s3 {
+  width: 20px;
+}
+
+.cartbot {
+  border: 1px solid #EAEBEC;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.cartbot .right {
+  float: right;
+}
+.cartbot .right i, .cartbot .right strong {
+  font-style: normal;
+  color: #FF8200;
+}
+.cartbot .right span {
+  display: inline-block;
+  padding: 0 25px;
+  margin-right: 10px;
+}
+.cartbot .right a {
+  background: #FF8200;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  font-weight: bold;
+  text-align: center;
+  width: 196px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=cart.css.map */

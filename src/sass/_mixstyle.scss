@@ -1,0 +1,7 @@
+@mixin borderstyle($bcolor:#999,$bwidth:1px,$style:solid) {
+	border: $bcolor $bwidth $style;
+}
+@mixin font-style($font-s:12px,$font-c:#999) {
+	font-size: $font-s;
+	color: $font-c;
+}

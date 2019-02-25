@@ -1,0 +1,100 @@
+.nav{
+	ul{
+		a{
+			@include font-style($font-s:15px,$font-c:#323334);
+			position: relative;
+			display: block;
+			text-decoration: none;
+			
+		}
+		/* li:hover .subli{
+			display: block;
+			height: 230px;
+		} */
+		li:nth-of-type(1){
+			a{
+				z-index: 10;
+				color: white;
+				background: #000;
+				padding: 0 60px;
+				margin: 0 20px 0 0;
+				&::before{
+					content: '';
+					//vertical-align: middle;#323334;
+					position: absolute;
+					left: 20px;
+					top: 0px;
+					display: inline-block;
+					width: 20px;
+					height: 30px;
+					background: $sorite 2px -295px no-repeat;
+					z-index: 9;
+				}
+			}
+		}
+		
+			@for $i from 2 through 7 {
+				li:nth-of-type(#{$i}){ 
+					 a{
+						  color: #323334;
+						  padding: 0 5px;
+						  &:hover{
+							  color: $img-color;
+						  }
+					 }	
+					
+				}
+			}
+	}
+	
+}
+.subli{
+		position: absolute;
+		left: -292px;
+		top: 35px;
+		width: 1240px;
+		height: 230px;
+		border-top: 1px solid #ddd;
+		background: rgba(255,255,255,.96)!important;
+		background: #fff;
+		box-shadow: 0px 4px 4px rgba(0,0,0,.2);
+		z-index: 111;
+		line-height: normal;
+		overflow: hidden;
+		text-align: center;
+		//display: none;
+		opacity: 0;
+		
+		ol{
+			padding: 20px;
+			height: 100%;
+			li{
+				cursor: pointer;
+				float: left;
+				position: relative;
+				padding: 0 30px;
+				width: 120px;
+				overflow: hidden;
+				border-right: 1px solid #ccc;
+				.img-box{
+					text-align: center;
+				}
+				span{
+					display: inline-block;
+					height: 18px;
+					line-height: 18px;
+					margin-top: 15px;
+				}
+				p{
+					line-height: 25px;
+					color: #ee4a25;
+				}
+					img{
+						width: 120px;
+						height: 120px;
+					}
+				
+			}
+		}
+	}
+

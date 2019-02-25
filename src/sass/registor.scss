@@ -1,0 +1,175 @@
+@charset "utf-8";
+$img-color:#23ac38;
+$bg-color:#e3e4e5;
+.clear:after{content:"";display:block;hieght:0;overflow:hidden;clear:both;visibility:hidden;}
+body{
+	height: 900px;
+}
+#doc{
+	width: 100%;
+	height: 100%;
+	background: #f5f5f5;
+}
+.content{
+		width: 700px;
+		margin: 0 auto;
+}
+.header{
+		color: #666;
+		padding: 10px 0;
+		width: 100%;
+		background: #e8e8e8;
+		.content{
+			a{
+				display:inline-block;
+				text-decoration: none;
+				vertical-align: middle;
+				&:hover{
+					color: #23ac38;
+				}
+			}
+			.logo{
+				background: url(https://i.360.cn/static/img/uc-i360-logo.png);
+				width: 168px;
+				height: 48px;
+				margin-right: 25px;
+			}
+			.reg{
+				font-size: 20px;
+				line-height: 30px;
+				height: 30px;
+				padding-left: 25px;
+				border-left: 1px solid #929292;
+				color: #222222;
+			}
+			.log{
+				float: right;
+				font-size: 14px;
+				line-height: 48px;
+				color: #7d7d7d;
+			}
+		}
+}
+.peg{
+	padding: 75px;
+}
+.reg-content{
+	min-height: 540px;
+	background: white;
+	width: auto;
+	h3{
+		font-weight: normal;
+		border-bottom: 2px solid #f5f5f5;
+		text-align: center;
+		color: #222222;
+		font-size: 20px;
+		padding: 20px;
+	}
+	.reg-main{
+		padding: 50px 0;
+		margin: 0 auto;
+		width:385px;
+		.p-main{
+			border: 1px solid #e6e6e6;
+			background: #fff;
+			border-radius: 3px;
+			height: 42px;
+			.lable{
+				display: inline-block;
+				height: 18px;
+				width: 18px;
+				margin: 0 8px;
+				vertical-align: middle;
+			}
+			.m-lable{
+				background: url(https://i.360.cn/static/img/uc-account-icon.png);
+			}
+			.p-lable{
+				background: url(https://i.360.cn/static/img/uc-password-icon.png);
+			}
+			input{
+				background: none;
+				outline: none;
+				border: 0;
+				width: 320px;
+				margin: 4px;
+				line-height: 21px;
+				height: 21px;
+				font-size: 14px;
+				padding: 6px 7px;
+				color: grey;
+			}
+		}
+		.w-span{
+			display: block;
+			margin: 7px 0;
+			height: 20px;
+		}
+	}
+	
+}
+.p-sign{
+	    input{
+			margin: 50px 0 10px 0;
+			background-position: 0% 0%;
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			background: #22ac69;
+			font-size: 14px;
+			font-weight: bold;
+			text-indent: 0;
+			text-align: center;
+			color: #fff;
+			border-radius: 3px;
+		}
+}
+.end{
+	input{
+		vertical-align: middle
+	}
+	text-align: center;
+    padding-top: 15px;
+	line-height: 18px;
+	vertical-align: middle;
+	font-size: 12px;
+	span{
+		
+		a{
+			color: #23ac38;
+			text-decoration: none;
+			
+		}
+	}
+}
+.footer{
+	.first{
+		margin: 20px 0;
+		a{
+			padding: 0 15px;
+			&:hover{
+				color: #23ac38;
+			}
+		}
+		.a-left{
+			    border-right: 1px solid #828282;
+		}
+	}
+	p{
+		a{
+			display: inline-block;
+			color: #828282;
+			text-decoration: none;
+		}
+		text-align: center;
+		font-size: 14px;
+		color: #999;
+		padding: 2px 0;
+		span{
+			vertical-align: middle;
+		}
+		img{
+			vertical-align: middle;
+		}
+	}
+}

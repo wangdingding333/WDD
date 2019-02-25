@@ -1,0 +1,67 @@
+body{
+	background: #f5f5f5;
+}
+.logo{
+		float: left;
+		vertical-align: middle;
+		height: 118px;
+		line-height: 118px;
+		overflow: hidden;
+		a{
+			display: inline-block;
+			img{
+				width: 150px;
+				height: 40px;
+				overflow: hidden;
+				vertical-align: middle;
+			}
+		}
+	
+}
+
+
+.search{
+	//width: 740px;
+	float: left;
+	padding-top: 30px;
+	margin-left: 250px;
+	display: inline-block;
+	.formstyle{
+		width: 541px;
+		display: inline-block;
+	}
+	.search-p{
+		@include font-style();
+		margin-top: 9px;
+		a{
+			text-decoration: none;
+			display: inline-block;
+			margin: 0 5px;
+			&:hover{
+				color: $price-color;
+			}
+		}
+	}
+}
+#put1{
+		@include borderstyle($bcolor:$img-color);
+		    width: 434px;
+			height: 40px;
+			padding: 0 14px;
+			line-height: 40px;
+			vertical-align: top;
+	}
+#put2{
+		@include borderstyle($bcolor:$img-color);
+		background: #23ac38 $sorite no-repeat 24px -112px;
+		width: 72px;
+		height: 42px;
+		padding: 0 14px;
+		line-height: 40px;
+		vertical-align: top;
+		cursor: pointer;
+		margin-left: -5px;
+		&:hover{
+			background-color: #23862a;
+			}
+	}

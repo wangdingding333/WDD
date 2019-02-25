@@ -1,0 +1,77 @@
+body{
+	background-color: white;
+}
+.top{
+	background: $bg-color;
+}
+
+.weaper-center{
+		width: 1240px;
+		margin: 0 auto;
+		ul{
+			font-size: 12px;
+			li{
+				float: left;
+				list-style: none;
+				position: relative;
+				
+				a{
+					display: block;
+					text-decoration: none;
+					height: 36px;
+					line-height: 36px;
+					color: $font-color;
+					margin: 0 11px;
+					&:hover{
+						color: $img-color;
+					}
+				}
+				i{
+					height: 18px;
+					width: 22px;
+					background: url(../img/head-icons1.png) no-repeat;
+					position: absolute;
+					top: 10px;
+					left: 0;
+					animation: rotateme .3s infinite;
+				}
+			}
+			.float-right{
+				float: right;
+			}
+		}
+}
+#float-right{
+	position: relative;
+	a{
+		padding-left: 20px;
+	}
+	.mobilestore{
+		@include borderstyle($bcolor:#ddd);
+		position: absolute;
+		z-index: 10000;
+		right: 10px;
+		top: 42px;
+		padding: 5px;
+			/* .mobilebox{
+				display: inline-block;
+				float: right;
+				@include font-style($font-c:$font-color);
+			} */
+		&::before{
+			content:'';
+			position: absolute;
+			top:-13px;
+			left: 28px;
+			@include borderstyle($bcolor:#ccc,$bwidth:6px);
+			border-color:transparent transparent #ccc;
+		} 
+		img{
+			width: 60px;
+			height: 60px;
+			vertical-align: middle;
+			font-size: 0px;
+			display: inline-block;
+		}
+	}
+}

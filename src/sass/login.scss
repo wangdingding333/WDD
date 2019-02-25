@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+
+@import "mixstyle";
+.page{
+	height: 700px;
+	overflow: hidden;
+	position: relative;
+	.bg{
+		background-image:url(https://p5.ssl.qhimg.com/t0118feb0c6cd63e5ba.jpg); 
+		background-position: 50%;
+		background-size: auto 100%;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transform: matrix(1.05,0,0,1.05,0,0);
+		transition: transform .5s linear,-webkit-transform .5s linear,-moz-transform .5s linear,-o-transform .5s linear;
+		width: 100%;
+	}
+	.logo{
+		background-image: url(https://p2.ssl.qhimg.com/t017e023359489ada69.png);
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		height: 57px;
+		left: 60px;
+		position: absolute;
+		top: 30px;
+		width: 300px;
+	}
+	.login-body{
+		height: 100%;
+		.login-content{
+			height: 100%;
+			width: 1200px;
+			margin: 0 auto;
+			position: relative;
+			.login-img{
+				height: 700px;
+				width: 700px;
+				background-image: url(https://p4.ssl.qhimg.com/t019a1f31118714bf2c.png);
+				background-position: 50%;
+				background-size: 100% auto;
+				display: inline-block;
+				*display: inline;
+				margin-top: -50px;
+				position: relative;
+				.rotate{
+					left: 50%;
+					margin-left: -350px;
+					height: 700px;
+					width: 700px;
+					animation: radarAnimations 3s linear infinite;
+					background: url(https://p2.ssl.qhimg.com/t01757f52d5c73d8964.png) no-repeat;
+					background-size: 100% 100%;
+					*display: none;
+					left: 50%;
+					margin-left: -348px;
+					position: absolute;
+					top: 0;
+					transform: translateZ(0);
+				}
+			}
+		}
+	}
+}
+.login{
+	border-radius: 5px;
+	.title{
+		padding: 30px 0;
+		text-align: center;
+		span{
+			display: inline-block;
+			margin: 0 auto;
+			font-weight: 500;
+			
+			font-size: 20px;
+			line-height: 20px;
+			color: #36b447;
+			border-bottom: 1px solid #36b447;
+		}
+	}
+	width:360px;
+	position: absolute;
+	right: 0;
+	top: 20%;
+	background: white;
+	.login-box{
+		    margin: 0 auto;
+			//padding-top: 30px;
+			padding-bottom: 40px;
+			width: 300px;
+			p{
+				input{
+					width: 278px;
+					outline: none;
+					border-radius: 2px;
+					border: 1px solid #ddd;
+					font-size: 14px;
+					display: inline-block;
+					color: #333;
+					height: 20px;
+					line-height: 20px;
+					padding: 10px;
+				}
+			}
+			.w-span{
+				display: block;
+				height: 22px;
+				line-height: 22px;
+				font-size: 12px;
+				
+			}
+	}
+}
+.login .login-box .p-sign{
+	     input{
+			color: white;
+			font-size: 18px;
+			background: #36b447;
+		
+		} 
+}
+.p-a{
+	    margin-top: 10px;
+		color: #6f6f6f;
+	a{
+		display: inline-block;
+		font-size: 14px;
+		text-decoration: none;
+		&:hover{
+			color: #36b447;
+		}
+	}
+	.p-a-right{
+		float: right;
+	}
+}
+.line{
+	border-bottom: 1px solid #e3e3e3;
+	margin-top: 20px;
+	position: relative;
+	i{
+		position: absolute;
+		top: -7px;
+		display: inline-block;
+		padding: 0 5px;
+		font-size: 14px;
+		color: #999;
+		left: 35%;
+		background: #fff;
+		font-style: normal;
+	}
+}
+.other{
+	margin-top: 28px;
+	text-align: center;
+	a{
+		margin: 0 20px;
+		i{
+			display: inline-block;
+			text-decoration: none;
+			font-size: 22px;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			@include borderstyle($bcolor:transparent);
+			border-radius: 50%;
+		}
+		.quc-icon-qq{
+			color: #4e9ff9;
+		}
+		.quc-icon-wechat{
+			color: #5ec12a;
+		}
+		.quc-icon-weibo{
+			color: #f65d6b;
+		}
+		
+	}
+}
+.footer{
+	.top{
+		width: 1200px;
+		margin: 10px auto;
+		a{
+			&:hover{
+				background: #ecfef8;
+				color:#36b447;
+				
+			}
+			i{
+				float: left;
+				font-size: 44px;
+				line-height: 80px;
+				padding-right: 12px;
+			}
+			span{
+					display: block;
+				    font-size: 18px;
+					margin-top: 20px;
+			}
+			p{
+				    font-size: 14px;
+					margin-top: 5px;
+			}
+			display: inline-block;
+			color: #58cfa6;
+			//float: left;
+			height: 80px;
+			line-height: 1;
+			//margin-left: 40px;
+			padding:20px 35px;
+			width: 226px;
+		}
+	}
+}
+.bot{
+	padding: 20px 0;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	color: #999;
+}

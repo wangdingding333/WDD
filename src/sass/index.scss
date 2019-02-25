@@ -1,0 +1,23 @@
+@charset "utf-8";
+$img-color:#23ac38;
+$bg-color:#e3e4e5;
+$font-color:#999;
+$price-color:#f10215;
+$sorite:url(../img/head-icons.png);
+$sorites:url(../img/allicons.png);
+.clear:after{content:"";display:block;hieght:0;overflow:hidden;clear:both;visibility:hidden;}
+
+
+@import "mixstyle";
+@import "top";
+@import "header";
+@import "nav";
+@import "sidebar";
+@import "slideshow";
+@import "thime";
+@import "car";
+@import "footer";
+@import "details";
+@import "cart";
+
+

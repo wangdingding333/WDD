@@ -1,0 +1,118 @@
+body{
+	background-color:#fff; 
+}
+.cart{
+	    width: 1240px;
+		margin: 19px auto 29px;
+		border: 1px solid #DDD;
+		.hd{
+			height: 50px;
+			background: #FFF;
+			border-bottom: 1px solid #DDD;
+			line-height: 50px;
+			text-indent: 20px;
+			h3{
+				font-weight: normal;
+				font-size: 18px;
+				color: #000;
+			}
+		}
+}
+.cartbody{
+	padding: 15px;
+	.emptylist{
+		width: 100%;
+		//height: 268px;
+		background-color: #fff;
+		background: url(http://static.i360mall.com/mall/images/cart_empty.jpg) no-repeat;
+	}
+}
+.cartlist{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 30px;
+	//border: 1px solid #DDD; 
+	.title{
+		background-color: #F9FAFB;
+		height: 38px;
+		border: 1px solid #DDD;
+	}
+	.title,.cartdata{
+		input{
+			outline: none;
+			vertical-align: middle;
+			margin-left: 20px;
+		}
+		div{
+			text-align: center;
+			display: inline-block;
+			line-height: 38px;
+			font-size: 12px;
+			color: #666;
+			vertical-align: middle;
+		}
+		.s1{
+			width: 126px;
+		}
+		.s2{
+			width: 565px;
+			padding-left: 20px;
+		}
+	}
+	.cartdata{
+		padding: 10px 0;
+		border: 1px solid #DDD;
+		border-top: none;
+		.s2{
+			img{
+				vertical-align: middle;
+				border: none;
+				font-size: 0;
+				float: left;
+				display: inline-block;
+			}
+			p{
+				//width: 400px;
+				//float: left;
+				display: inline-block;
+				vertical-align: middle;
+			} 
+		}
+		.s3{
+			width: 20px;
+		}
+	}
+}
+.cartbot{
+	.right{
+		float: right;
+		i,strong{
+			font-style: normal;
+			color: #FF8200;
+		}
+		span{
+			display: inline-block;
+			padding: 0 25px;
+			margin-right: 10px;
+		}
+		a{
+			background: #FF8200;
+			color: #fff;
+			display: block;
+			font-size: 18px;
+			height: 50px;
+			line-height: 50px;
+			float: right;
+			font-weight: bold;
+			text-align: center;
+			width: 196px;
+			text-decoration: none;
+		}
+	}
+	    border: 1px solid #EAEBEC;
+		font-size: 14px;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 15px;
+		padding-left: 20px;
+}
