@@ -50,7 +50,7 @@ define(['config'], function() {
 			return false;
 		})
 		
-		//2.二级菜单的消失与隐藏
+		//4.二级菜单的消失与隐藏
 		var $sub=$('.subnav li');
 		var $subnav=$('.popbox');
 		$sub.hover(function(){
@@ -64,14 +64,31 @@ define(['config'], function() {
 		$navli.hover(function(){
 			$subli.animate({
 				opacity:1,
-				display:'block'
+				display:'block',
+				height:230
 			},600)
 		},function(){
 			$subli.animate({
 				opacity:0,
-				display:'none'
+				display:'none',
+				height:0
 			},600)
 		})
+		
+		//5.顶部炫富效果(添加)
+		$(window).on('scroll',function(){
+			var $tops=$(window).scrollTop();
+			if($tops>300){
+				$('.box1').stop(true).animate({
+					top:0
+				});
+			}else{
+				$('.box1').stop(true).animate({
+					top:-50
+				})
+			}
+		})
+		
 		//3.幻灯片效果
 		var $box = $('.bigbox');
 		var $banner = $('.lun-ol');
@@ -107,6 +124,28 @@ define(['config'], function() {
 			effect: "fadeIn"
 		}); */
 
-
+		//6.首页的数据渲染
+		$.ajax({
+			url:'../php/360data.php',
+			dataType:'json'
+		}).done(function(data){
+			var $html='';
+			$.each(data,function(index,value){
+				$html+=`
+					<li>
+						<a href="http://10.31.162.161/html-5/360store/src/details.html?sid=${value.sid}" target="_blank">
+							<i><img src="${value.url}"/></i>
+							<p>${value.title}</p>
+							<span>￥${value.price}</span>
+						</a>
+					</li>
+				`;
+			});
+			$('.section-ol-1').html($html);
+		})
+		
+		
+		
+		
 	})
 });

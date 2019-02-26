@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/cart.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main.js"></script>
 	</head>
 
 	<body>
@@ -66,38 +67,45 @@
 				<h3>我的购物车</h3>
 			</div>
 			<div class="cartbody">
-				<div class="emptylist" style="display: none;"></div>
-
+				<div class="emptylist">
+					您的购物车空空如也~~~
+				</div>
+					
+					<div class="title">
+						<input type="checkbox" class="checkall">
+						<div>全选</div>
+						<div class="s2">商品</div>
+						<div class="s1">单价</div>
+						<div class="s1">数量</div>
+						<div class="s1">小计</div>
+						<div class="s1">操作</div>
+					</div>
+					
 					<div class="cartlist">
-						<div class="title">
-							<input type="checkbox" class="checkall">
-							<div>全选</div>
-							<div class="s2">商品</div>
-							<div class="s1">单价</div>
-							<div class="s1">数量</div>
-							<div class="s1">小计</div>
-							<div class="s1">操作</div>
-						</div>
 						<!-- 商品详情 --><!-- 克隆样式 -->
 						<div class="cartdata">
-							<input type="checkbox" class="checkall">
+							<input type="checkbox" class="check" >
 							<div class="s3"></div>
 							<div class="s2">
 								<img src="http://img11.360buyimg.com/N4/jfs/t1/10165/10/7744/88824/5c2f31c9E55afa528/cd31142dae180b99.jpg" alt="">
-								<p >360手机 N7 Pro 红衣版 6GB+128GB 珊瑚红 全网通4G手机 双卡双待 全面屏 游戏手机<br>颜色：珊瑚红 型号：6GB+128GB</p>
+								<p class="p-info">360手机 N7 Pro 红衣版 6GB+128GB 珊瑚红 全网通4G手机 双卡双待 全面屏 游戏手机<br>颜色：珊瑚红 型号：6GB+128GB</p>
 							</div>
-							<div class="s1 price">￥1999.00</div>
-							<div class="s1 quantity">无货</div>
-							<div class="s1 sum">￥1999.00</div>
-							<div class="s1 action">删除</div>
+							<div class="s1 price">￥<i></i></div>
+							<div class="s1 quantity">
+								<a href="javascript:;" class="rem">-</a>
+								<input type="text" name="" id="" value="1" />
+								<a href="javascript:;" class="add">+</a>
+							</div>
+							<div class="s1 sum">￥<i></i></div>
+							<div class="s1 action"><a href="javascript:;">删除</a></div>
 						</div>
-						<!-- 商品底部 -->
-						<div class="cartbot">
-							<div class="right">
-								<span>已选择<i>1</i>件商品</span>
-								<span>总价<strong>￥1999.00</strong></span>
-								<a href="">去结算</a>
-							</div>
+					</div>
+					<!-- 商品底部 -->
+					<div class="cartbot">
+						<div class="right">
+							<span>已选择<i></i>件商品</span>
+							<span>总价:<strong></strong></span>
+							<a href="">去结算</a>
 						</div>
 					</div>
 			</div>
@@ -163,20 +171,6 @@
 		</div>
 
 		<!-- 侧边栏-左 返回顶部图标-->
-		<div class="sidebar-left">
-			<ol>
-				<li><a href="">明星单品</a></li>
-				<li><a href="">手机</a></li>
-				<li><a href="">数码</a></li>
-				<li><a href="">车品</a></li>
-				<li><a href="">家电</a></li>
-				<li id="end">
-					<a href="">
-						<img src="http://static.i360mall.com/mall/images/elevator-totop.png" alt="">
-					</a>
-				</li>
-			</ol>
-		</div>
 
 		<!-- 侧边栏-右 -->
 		<div class="sidebar-right">

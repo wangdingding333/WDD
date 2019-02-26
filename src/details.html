@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/details.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main.js"></script>
 	</head>
 
 	<body>
@@ -102,58 +103,55 @@
 		</div>
 
 		<!-- 详情页 -->
-			<div class="details">
-				<div class="weaper-center clear">
-					<div class="d-left" style="float: left;">
-						<div class="pic-box">
-							<div class="sm-box">
-								<div class="xf"></div>
-								<img class="sm-pic" src="http://img14.360buyimg.com/N1/s450x450_jfs/t22678/287/2334945009/222624/43a5b94e/5b7b9140Nb96d8bae.jpg" alt="">
-							</div>
-							<div class="bot-pic">
-								<i>&lt;</i>
-								<div class="cen-pic">
-									<div class="ener-pic">
-										<a href=""><img src="http://img14.360buyimg.com/N1/s450x450_jfs/t23965/310/2287384601/69167/1198bf07/5b7b913dNec029d3c.jpg" alt=""></a>
-										<a href=""><img src="http://img12.360buyimg.com/N1/s450x450_jfs/t25654/100/785552428/40470/5f5e9ed7/5b7b913dN1dba8d47.jpg" alt=""></a>
-										<a href=""><img src="http://img12.360buyimg.com/N1/s450x450_jfs/t25654/100/785552428/40470/5f5e9ed7/5b7b913dN1dba8d47.jpg" alt=""></a>
-										<a href=""><img src="http://img12.360buyimg.com/N1/s450x450_jfs/t25654/100/785552428/40470/5f5e9ed7/5b7b913dN1dba8d47.jpg" alt=""></a>
-										<a href=""><img src="http://img12.360buyimg.com/N1/s450x450_jfs/t25654/100/785552428/40470/5f5e9ed7/5b7b913dN1dba8d47.jpg" alt=""></a>
-										<a href=""><img src="http://img12.360buyimg.com/N1/s450x450_jfs/t25654/100/785552428/40470/5f5e9ed7/5b7b913dN1dba8d47.jpg" alt=""></a>
-									</div>
-								</div>
-								<i>&gt;</i>
-							</div>
-							<div class="bf">
-								<img class="bg-pic" src="" alt="">
-							</div>
+		<div class="details">
+			<div class="weaper-center clear">
+				<div class="goodsinfo">
+					<div class="wrap">
+						<div id="spic">
+							<img src="" alt="" id="smallpic">
+							<div id="sf"></div>
 						</div>
-					</div>
-					<div class="d-right">
-						<div class="str">
-							<strong class="title">360手机 N7 Pro 全网通 6GB+64GB 珊瑚红 移动联通电信4G手机 双卡双待 全面屏 游戏手机</strong>
+						<div id="bf">
+							<img src="" alt="" id="bpic">
 						</div>
-						<div class="cen">
-							<strong class="price">￥1499.00</strong>
-						</div>
-						
-						<div class="deta">
-							<p><span>配送至</span><a class="a1" href="">北京朝阳区三环以内</a></p>
-							<p><span>颜　　色</span><a href="">珊瑚红</a><a href="">玛瑙黑</a></p>
-							<p><span>型　　号</span><a href="">6GB+128GB</a><a href="">6GB+64GB</a></p>
-							<p><span>版　　本</span><a href="">U盾安全套装</a><a href="">红衣定制版</a><a href="">裸机版</a></p>
-							<p class="end"><span>数　　量</span><input type="" name="" id="" value="" /></p>
-							<div class="join">
-								<a href="">
-									<i></i>
-									已售罄
-								</a>
+						<div id="ulist">
+							<a href="javascript:;" id="left">&lt;</a>
+							<div id="list">
+								<ul>
+
+								</ul>
 							</div>
+							<a href="javascript:;" id="right">&gt;</a>
 						</div>
-						
 					</div>
 				</div>
+
+
+				<div class="d-right">
+					<div class="str">
+						<strong class="title">
+							<!-- 360手机 N7 Pro 全网通 6GB+64GB 珊瑚红 移动联通电信4G手机 双卡双待 全面屏 游戏手机 --></strong>
+					</div>
+					<div class="cen">
+						<strong class="price">￥<i></i></strong>
+					</div>
+
+					<div class="deta">
+						<p><span>配送至</span><a class="a1" href="">北京朝阳区三环以内</a></p>
+						<p><span>颜　　色</span><a href="">珊瑚红</a><a href="">玛瑙黑</a></p>
+						<p><span>型　　号</span><a href="">6GB+128GB</a><a href="">6GB+64GB</a></p>
+						<p><span>版　　本</span><a href="">U盾安全套装</a><a href="">红衣定制版</a><a href="">裸机版</a></p>
+						<p class="end"><span>数　　量</span><input type="text" name="" id="count" value="1" /></p>
+						<div class="join">
+							<a href="http://10.31.162.161/html-5/360store/src/cart.html" target="_blank">
+								加入购物车
+							</a>
+						</div>
+					</div>
+
+				</div>
 			</div>
+		</div>
 		<!--页面底部-->
 		<div class="footer">
 			<div class="footer-top">
@@ -215,21 +213,6 @@
 		</div>
 
 		<!-- 侧边栏-左 返回顶部图标-->
-		<div class="sidebar-left">
-			<ol>
-				<li><a href="">明星单品</a></li>
-				<li><a href="">手机</a></li>
-				<li><a href="">数码</a></li>
-				<li><a href="">车品</a></li>
-				<li><a href="">家电</a></li>
-				<li id="end">
-					<a href="">
-						<img src="http://static.i360mall.com/mall/images/elevator-totop.png" alt="">
-					</a>
-				</li>
-			</ol>
-		</div>
-
 		<!-- 侧边栏-右 -->
 		<div class="sidebar-right">
 			<ol>

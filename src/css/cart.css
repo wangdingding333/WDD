@@ -24,9 +24,19 @@ body {
   padding: 15px;
 }
 .cartbody .emptylist {
+  font-size: 50px;
   width: 100%;
   background-color: #fff;
-  background: url(http://static.i360mall.com/mall/images/cart_empty.jpg) no-repeat;
+  display: block;
+  height: 268px;
+}
+
+.title {
+  background-color: #F9FAFB;
+  height: 38px;
+  border: 1px solid #DDD;
+  width: 98%;
+  margin-left: 1%;
 }
 
 .cartlist {
@@ -34,35 +44,11 @@ body {
   margin: 0 auto;
   margin-top: 30px;
 }
-.cartlist .title {
-  background-color: #F9FAFB;
-  height: 38px;
-  border: 1px solid #DDD;
-}
-.cartlist .title input, .cartlist .cartdata input {
-  outline: none;
-  vertical-align: middle;
-  margin-left: 20px;
-}
-.cartlist .title div, .cartlist .cartdata div {
-  text-align: center;
-  display: inline-block;
-  line-height: 38px;
-  font-size: 12px;
-  color: #666;
-  vertical-align: middle;
-}
-.cartlist .title .s1, .cartlist .cartdata .s1 {
-  width: 126px;
-}
-.cartlist .title .s2, .cartlist .cartdata .s2 {
-  width: 565px;
-  padding-left: 20px;
-}
 .cartlist .cartdata {
   padding: 10px 0;
   border: 1px solid #DDD;
-  border-top: none;
+  display: none;
+  margin-top: 8px;
 }
 .cartlist .cartdata .s2 img {
   vertical-align: middle;
@@ -70,6 +56,8 @@ body {
   font-size: 0;
   float: left;
   display: inline-block;
+  width: 80px;
+  height: 80px;
 }
 .cartlist .cartdata .s2 p {
   display: inline-block;
@@ -79,7 +67,42 @@ body {
   width: 20px;
 }
 
+.title input, .cartdata input {
+  outline: none;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.title div, .cartdata div {
+  text-align: center;
+  display: inline-block;
+  line-height: 38px;
+  font-size: 12px;
+  color: #666;
+  vertical-align: middle;
+}
+.title .s1, .cartdata .s1 {
+  width: 126px;
+}
+.title .s1 i, .cartdata .s1 i {
+  color: #FA5437;
+  font-style: normal;
+}
+.title .action a, .cartdata .action a {
+  color: #FA5437;
+}
+.title .s2, .cartdata .s2 {
+  width: 565px;
+  padding-left: 20px;
+}
+
+.cartdata .s2 img {
+  width: 86px;
+  height: 78px;
+}
+
 .cartbot {
+  width: 97%;
+  margin-left: 10px;
   border: 1px solid #EAEBEC;
   font-size: 14px;
   height: 50px;
@@ -111,6 +134,24 @@ body {
   text-align: center;
   width: 196px;
   text-decoration: none;
+}
+
+.quantity input {
+  display: inline-block;
+  width: 30px;
+  outline: none;
+  border: none;
+  text-align: center;
+  text-indent: -12px;
+}
+.quantity a {
+  display: inline-block;
+  text-align: center;
+  background: #ccc;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=cart.css.map */

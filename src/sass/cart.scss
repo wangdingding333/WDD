@@ -21,23 +21,56 @@ body{
 .cartbody{
 	padding: 15px;
 	.emptylist{
+		font-size: 50px;
 		width: 100%;
-		//height: 268px;
 		background-color: #fff;
-		background: url(http://static.i360mall.com/mall/images/cart_empty.jpg) no-repeat;
+		display: block;
+		height: 268px;
 	}
 }
+.title{
+		background-color: #F9FAFB;
+		height: 38px;
+		border: 1px solid #DDD;
+		width: 98%;
+		margin-left: 1%;
+	}
 .cartlist{
 	width: 98%;
 	margin: 0 auto;
 	margin-top: 30px;
 	//border: 1px solid #DDD; 
-	.title{
-		background-color: #F9FAFB;
-		height: 38px;
+	
+	
+	.cartdata{
+		padding: 10px 0;
 		border: 1px solid #DDD;
+		//border-top: none;
+		display: none;
+		margin-top: 8px;
+		.s2{
+			img{
+				vertical-align: middle;
+				border: none;
+				font-size: 0;
+				float: left;
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+			}
+			p{
+				//width: 400px;
+				//float: left;
+				display: inline-block;
+				vertical-align: middle;
+			} 
+		}
+		.s3{
+			width: 20px;
+		}
 	}
-	.title,.cartdata{
+}
+.title,.cartdata{
 		input{
 			outline: none;
 			vertical-align: middle;
@@ -53,37 +86,32 @@ body{
 		}
 		.s1{
 			width: 126px;
+			i{
+				color: #FA5437;
+				font-style: normal;
+			}
+		}
+		.action{
+			 a{
+				 color: #FA5437;
+			 }
 		}
 		.s2{
 			width: 565px;
 			padding-left: 20px;
 		}
 	}
-	.cartdata{
-		padding: 10px 0;
-		border: 1px solid #DDD;
-		border-top: none;
-		.s2{
-			img{
-				vertical-align: middle;
-				border: none;
-				font-size: 0;
-				float: left;
-				display: inline-block;
-			}
-			p{
-				//width: 400px;
-				//float: left;
-				display: inline-block;
-				vertical-align: middle;
-			} 
-		}
-		.s3{
-			width: 20px;
+.cartdata{
+	.s2{
+		img{
+			width: 86px;
+			height: 78px;
 		}
 	}
 }
 .cartbot{
+	width: 97%;
+    margin-left: 10px;
 	.right{
 		float: right;
 		i,strong{
@@ -115,4 +143,23 @@ body{
 		line-height: 50px;
 		margin-top: 15px;
 		padding-left: 20px;
+}
+.quantity{
+	input{
+		display: inline-block;
+		width: 30px;
+		outline: none;
+		border: none;
+		text-align: center;
+		text-indent: -12px;
+	}
+	a{
+		display: inline-block;
+		text-align: center;
+		background: #ccc;
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		line-height: 20px;
+	}
 }
