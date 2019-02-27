@@ -64,22 +64,23 @@
 		}
 	}
 }
+#titl{
+	padding: 30px 0;
+	text-align: center;
+	span{
+		display: inline-block;
+		margin: 0 auto;
+		font-weight: 500;
+		
+		font-size: 20px;
+		line-height: 20px;
+		color: #36b447;
+		border-bottom: 1px solid #36b447;
+	}
+}
 .login{
 	border-radius: 5px;
-	.title{
-		padding: 30px 0;
-		text-align: center;
-		span{
-			display: inline-block;
-			margin: 0 auto;
-			font-weight: 500;
-			
-			font-size: 20px;
-			line-height: 20px;
-			color: #36b447;
-			border-bottom: 1px solid #36b447;
-		}
-	}
+
 	width:360px;
 	position: absolute;
 	right: 0;

@@ -75,7 +75,7 @@ define(['config'], function() {
 			},600)
 		})
 		
-		//5.顶部炫富效果(添加)
+		//5.顶部炫富效果(额外添加)
 		$(window).on('scroll',function(){
 			var $tops=$(window).scrollTop();
 			if($tops>300){
@@ -117,12 +117,6 @@ define(['config'], function() {
 				left:0
 			})
 		})
-
-		//4.图片懒加载功能
-		
-		/* $("img.lazy").lazyload({
-			effect: "fadeIn"
-		}); */
 
 		//6.首页的数据渲染
 		$.ajax({

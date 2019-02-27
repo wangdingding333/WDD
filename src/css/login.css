@@ -61,19 +61,11 @@
   transform: translateZ(0);
 }
 
-.login {
-  border-radius: 5px;
-  width: 360px;
-  position: absolute;
-  right: 0;
-  top: 20%;
-  background: white;
-}
-.login .title {
+#titl {
   padding: 30px 0;
   text-align: center;
 }
-.login .title span {
+#titl span {
   display: inline-block;
   margin: 0 auto;
   font-weight: 500;
@@ -81,6 +73,15 @@
   line-height: 20px;
   color: #36b447;
   border-bottom: 1px solid #36b447;
+}
+
+.login {
+  border-radius: 5px;
+  width: 360px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background: white;
 }
 .login .login-box {
   margin: 0 auto;

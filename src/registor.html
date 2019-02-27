@@ -11,6 +11,7 @@
 		<meta property="qc:admins" content="155766667260636" />
 		<link rel="stylesheet" type="text/css" href="css/registor.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main.js"></script>
 		<style type="text/css">
 			@font-face {
 				font-family: "iconfont";
@@ -46,27 +47,27 @@
 					<div class="reg-content">
 						<h3>注册360账号</h3>
 						<div class="reg-main">
-							<form action="" method="">
+							<form action="http://10.31.162.161/html-5/360store/php/registor.php" method="post" id="formbox">
 								<div>
 									<p class="p-main">
 										<span><label for="" class="lable m-lable"></label></span>
-										<span><input type="text" name=""  value="" placeholder="请输入要注册的手机号" /></span>
+										<span><input type="text" name="tel" value="" placeholder="请输入要注册的手机号" class="tel"/></span>
 									</p>
-									<span class="w-span"></span>
+									<span class="w-span span1"></span>
 
 									<p class="p-main">
 										<span><label for="" class="lable p-lable"></label></span>
-										<span><input type="password" name=""  value="" placeholder="密码请设置8-20个字符" /></span>
+										<span><input type="password" name="password" value="" placeholder="密码请设置8-16个字符" class="psw"/></span>
 									</p>
-									<span class="w-span"></span>
+									<span class="w-span span2"></span>
 
 									<p class="p-sign">
-										<input type="submit" name="" id="sign-up" value="立即注册" />
+										<input type="submit" name="submit" id="sign-up" value="立即注册" />
 									</p>
 									
 									<p class="end">
 										<label>
-											<input class="quc-checkbox" type="checkbox" name="" />
+											<input class="quc-checkbox" type="checkbox" name="" checked />
 											<span>阅读并同意<a href="">“360用户协议”</a>和<a href="">“360用户隐私政策”</a></span>
 										</label>
 									</p>

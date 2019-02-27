@@ -7,7 +7,7 @@ define(['config'],function(){
 		
 		//2.将当前的id传给后端获取对应的数据
 		$.ajax({
-			url: '../php/detail.php',
+			url: 'http://10.31.162.161/html-5/360store/php/detail.php',
 			data: {
 				sid: picid
 			},
@@ -17,7 +17,7 @@ define(['config'],function(){
 			$('#smallpic').attr('src', data.url);
 			$('#bpic').attr('src', data.url);
 			$('#smallpic').attr('sid', data.sid);
-			$('.title').html(data.title);
+			$('.titles').html(data.title);
 			$('.price i').html(data.price);
 			var arr = data.urls.split(',');
 			var str = '';
@@ -137,10 +137,8 @@ define(['config'],function(){
 			}
 			
 		});
-		
-		
-		
-		
-		
+
+
+
 	})
 })

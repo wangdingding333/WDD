@@ -18,7 +18,6 @@
 			@include borderstyle($bcolor:#ddd);
 			&:hover{
 				color: $img-color;
-				border-bottom: none;
 			}
 		i{
 			vertical-align: middle;

@@ -90,6 +90,15 @@ body {
   background: #f5f5f5;
 }
 
+.header {
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.logobox {
+  position: relative;
+}
+
 .logo {
   float: left;
   vertical-align: middle;
@@ -172,32 +181,35 @@ body {
 
 .d-img {
   position: absolute;
-  top: 41%;
-  right: 19%;
+  top: 74%;
+  right: 4%;
   cursor: pointer;
 }
 
-.nav ul {
+.nav {
+  position: relative;
+}
+.nav .second ul {
   /* li:hover .subli{
   	display: block;
   	height: 230px;
   } */
 }
-.nav ul a {
+.nav .second ul a {
   font-size: 15px;
   color: #323334;
   position: relative;
   display: block;
   text-decoration: none;
 }
-.nav ul li:nth-of-type(1) a {
+.nav .second ul li:nth-of-type(1) a {
   z-index: 10;
   color: white;
   background: #000;
   padding: 0 60px;
   margin: 0 20px 0 0;
 }
-.nav ul li:nth-of-type(1) a::before {
+.nav .second ul li:nth-of-type(1) a::before {
   content: '';
   position: absolute;
   left: 20px;
@@ -208,46 +220,46 @@ body {
   background: url(../img/head-icons.png) 2px -295px no-repeat;
   z-index: 9;
 }
-.nav ul li:nth-of-type(2) a {
+.nav .second ul li:nth-of-type(2) a {
   color: #323334;
   padding: 0 5px;
 }
-.nav ul li:nth-of-type(2) a:hover {
+.nav .second ul li:nth-of-type(2) a:hover {
   color: #23ac38;
 }
-.nav ul li:nth-of-type(3) a {
+.nav .second ul li:nth-of-type(3) a {
   color: #323334;
   padding: 0 5px;
 }
-.nav ul li:nth-of-type(3) a:hover {
+.nav .second ul li:nth-of-type(3) a:hover {
   color: #23ac38;
 }
-.nav ul li:nth-of-type(4) a {
+.nav .second ul li:nth-of-type(4) a {
   color: #323334;
   padding: 0 5px;
 }
-.nav ul li:nth-of-type(4) a:hover {
+.nav .second ul li:nth-of-type(4) a:hover {
   color: #23ac38;
 }
-.nav ul li:nth-of-type(5) a {
+.nav .second ul li:nth-of-type(5) a {
   color: #323334;
   padding: 0 5px;
 }
-.nav ul li:nth-of-type(5) a:hover {
+.nav .second ul li:nth-of-type(5) a:hover {
   color: #23ac38;
 }
-.nav ul li:nth-of-type(6) a {
+.nav .second ul li:nth-of-type(6) a {
   color: #323334;
   padding: 0 5px;
 }
-.nav ul li:nth-of-type(6) a:hover {
+.nav .second ul li:nth-of-type(6) a:hover {
   color: #23ac38;
 }
-.nav ul li:nth-of-type(7) a {
+.nav .second ul li:nth-of-type(7) a {
   color: #323334;
   padding: 0 5px;
 }
-.nav ul li:nth-of-type(7) a:hover {
+.nav .second ul li:nth-of-type(7) a:hover {
   color: #23ac38;
 }
 
@@ -298,10 +310,118 @@ body {
   height: 120px;
 }
 
+/* .weaper-center{
+	
+
+.nav{ */
+#subnav {
+  position: absolute;
+  top: 36px;
+  left: 0px;
+  color: #fff;
+  background: white;
+  z-index: 99;
+}
+#subnav ul {
+  width: 210px;
+  height: 420px;
+  position: relative;
+}
+#subnav ul li {
+  opacity: 0.8;
+}
+#subnav ul li:hover {
+  opacity: 1;
+}
+#subnav ul li:hover .popbox {
+  display: block;
+}
+#subnav ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #1b1b1b;
+}
+#subnav ul li a:hover {
+  color: #23ac38;
+}
+#subnav ul li a i {
+  display: inline-block;
+  width: 34px;
+  vertical-align: middle;
+  font-size: 21px;
+  position: relative;
+  left: 20px;
+  margin-right: 30px;
+  top: 0;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.88);
+}
+#subnav ul li a span {
+  display: inline-block;
+  text-align: left;
+}
+
+.popbox {
+  display: none;
+  padding: 30px 0 0 30px;
+  width: 1030px;
+  height: 410px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 210px;
+  top: 0;
+  background: #fff;
+}
+.popbox p {
+  height: 14px;
+  line-height: 14px;
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.popbox ol li:nth-of-type(1) a {
+  color: #ee4a25;
+}
+.popbox ol li:nth-of-type(1) a:hover {
+  color: #ee4a25;
+}
+.popbox ol li:nth-of-type(2) a {
+  color: #ee4a25;
+}
+.popbox ol li:nth-of-type(2) a:hover {
+  color: #ee4a25;
+}
+.popbox ol li:nth-of-type(3) a {
+  color: #ee4a25;
+}
+.popbox ol li:nth-of-type(3) a:hover {
+  color: #ee4a25;
+}
+.popbox ol li {
+  float: left;
+  padding: 0 16px;
+}
+.popbox ol li a {
+  display: block;
+}
+.popbox ol li a img {
+  font-size: 0;
+  vertical-align: middle;
+}
+.popbox ol li a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* }
+} */
 .sidebar-left {
   position: fixed;
   top: 100px;
-  left: 10%;
+  left: 8%;
   background: #32333d;
 }
 .sidebar-left li {
@@ -401,9 +521,15 @@ body {
 
 .slideshow {
   position: relative;
+  width: 100%;
+  height: 420px;
 }
 .slideshow .lunbo {
+  position: absolute;
   height: 420px;
+  width: 100%;
+  left: 50%;
+  margin-left: -952px;
 }
 .slideshow .lunbo a {
   position: absolute;
@@ -457,95 +583,6 @@ body {
   background: white;
   text-indent: -9999px;
   margin: 0 5px;
-}
-.slideshow .subnav {
-  position: absolute;
-  top: 0;
-  left: 332px;
-  color: #fff;
-}
-.slideshow .subnav ul {
-  background-color: rgba(255, 255, 255, 0.88);
-  width: 210px;
-  height: 420px;
-  position: relative;
-}
-.slideshow .subnav ul li a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #1b1b1b;
-}
-.slideshow .subnav ul li a:hover {
-  color: #23ac38;
-  background-color: #fff;
-}
-.slideshow .subnav ul li a i {
-  display: inline-block;
-  width: 34px;
-  vertical-align: middle;
-  font-size: 21px;
-  position: relative;
-  left: 20px;
-  margin-right: 30px;
-}
-.slideshow .subnav ul li a span {
-  display: inline-block;
-  text-align: left;
-}
-
-.popbox {
-  display: none;
-  padding: 30px 0 0 30px;
-  width: 1030px;
-  height: 410px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 210px;
-  top: 0;
-  background: #fff;
-}
-.popbox p {
-  height: 14px;
-  line-height: 14px;
-  color: #000;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-.popbox ol li:nth-of-type(1) a {
-  color: #ee4a25;
-}
-.popbox ol li:nth-of-type(1) a:hover {
-  color: #ee4a25;
-}
-.popbox ol li:nth-of-type(2) a {
-  color: #ee4a25;
-}
-.popbox ol li:nth-of-type(2) a:hover {
-  color: #ee4a25;
-}
-.popbox ol li:nth-of-type(3) a {
-  color: #ee4a25;
-}
-.popbox ol li:nth-of-type(3) a:hover {
-  color: #ee4a25;
-}
-.popbox ol li {
-  float: left;
-  padding: 0 16px;
-}
-.popbox ol li a {
-  display: block;
-}
-.popbox ol li a img {
-  font-size: 0;
-  vertical-align: middle;
-}
-.popbox ol li a span {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 /* .hidden{
@@ -709,7 +746,6 @@ body {
 }
 .car .car-a:hover {
   color: #23ac38;
-  border-bottom: none;
 }
 .car .car-a i {
   vertical-align: middle;
@@ -961,9 +997,10 @@ input {
 #spic {
   width: 400px;
   height: 400px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   float: left;
   position: relative;
+  cursor: move;
 }
 
 #spic img {
@@ -983,9 +1020,9 @@ input {
 }
 
 #bf {
-  width: 400px;
+  width: 500px;
   height: 500px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   overflow: hidden;
   position: absolute;
   left: 410px;
@@ -1012,9 +1049,8 @@ input {
 
 #ulist a {
   float: left;
-  width: 10px;
+  width: 15px;
   height: 54px;
-  border: 1px solid #ccc;
   text-decoration: none;
   line-height: 56px;
   text-align: center;
@@ -1026,6 +1062,14 @@ input {
   margin-left: 18px;
   width: 372px;
   position: relative;
+}
+#list li {
+  cursor: pointer;
+  margin: 0 4px;
+}
+#list li:hover img {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .wrap ul {
@@ -1046,7 +1090,6 @@ input {
 .wrap ul li img {
   width: 52px;
   height: 52px;
-  border: 1px solid #ccc;
 }
 
 #right {
@@ -1131,6 +1174,32 @@ input {
   text-align: center;
   float: left;
   margin-left: 10px;
+}
+
+#right i {
+  position: relative;
+  cursor: pointer;
+}
+#right i::after {
+  border: 10px solid transparent;
+  border-left: 10px solid #FFF;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 17px;
+  right: -15px;
+  content: ' ';
+}
+#right i:before {
+  border: 10px solid transparent;
+  border-left: 10px solid #FFF;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 17px;
+  right: -16px;
+  content: ' ';
+  border-left-color: #A7A7A7;
 }
 
 body {
