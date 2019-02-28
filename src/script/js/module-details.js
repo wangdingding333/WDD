@@ -14,6 +14,7 @@ define(['config'],function(){
 			dataType: 'json'
 		}).done(function(data) {//data:后端返回的和id对应的数据
 			//console.log(data);
+			
 			$('#smallpic').attr('src', data.url);
 			$('#bpic').attr('src', data.url);
 			$('#smallpic').attr('sid', data.sid);

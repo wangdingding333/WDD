@@ -19,7 +19,7 @@
 	//一.确认点击的是提交按钮
 	if(isset($_POST['submit'])){
 		$tel=$_POST['tel'];
-		$pass=$_POST['password'];
+		$pass=sha1($_POST['password']);
 		$query="insert user values(NULL,'$tel','$pass',NOW())";
 		mysql_query($query);
 		

@@ -37,9 +37,8 @@ define(['config'],function(){
 		//3.如果商品列表存在，隐藏初始画面
 		empty();
 		function empty(){
-			if($.cookie('cookiesid') || $.cookie('cookienum')){
+			if($.cookie('cookiesid') && $.cookie('cookienum')){
 				$('.emptylist').hide();
-				$('.title').show();
 			}else{
 				$('.emptylist').show();
 				$('.title').hide();
@@ -157,6 +156,7 @@ define(['config'],function(){
 				$(this).parents('.cartdata').remove();
 				deletecookie($(this).parents('.cartdata').find('.s2 img').attr('sid'),sidarr);
 			}
+			
 		});
 		
 		
@@ -170,7 +170,7 @@ define(['config'],function(){
 			$.cookie('cookienum',numarr.toString(),{expires:10});
 		}
 		
-		
+		//页面的刷新
 		
 		
 		

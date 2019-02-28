@@ -1,8 +1,122 @@
 define(['config'],function(){
-	require(['jquery','jqcookie','validate'],function(){
+	require(['jqcookie'],function(){
 		
 		//0.表单验证
-		
+		(function(){
+			//var tel=$('.tel');
+			//var psw=$('.psw');
+			var sign=$('#sign-up');
+			var telflag=true;
+			var passwordflag=true;
+			
+			$(document).ready(function(){
+				//$tel.focus();
+				$tel.on('focus',function(){
+					//console.log($(this).val());
+					if($(this).val()==''){
+						$span1.html('请输入正确的手机号');
+						$span1.css({"color":"red"});
+					}
+				});
+				
+				$tel.on('blur',function(){
+					if($(this).val()!==''){
+						var regtel=/^1[35784]\d{9}$/;//正则表达式
+						if(regtel.test($(this).val())){
+							$span1.html('手机号验证通过');
+							$span1.css({"color":"green"});
+							telflag=true;
+						}else{
+							$span1.html('手机号格式不正确');
+							$span1.css({"color":"red"});
+							telflag=false;
+						}
+					}else{
+						$span1.html('手机号不能为空');
+						$span1.css({"color":"red"});
+						telflag=false;
+					}
+				});
+				
+				$psw.on('blur',function(){
+					if($(this).val()!=''){
+						if(passwordflag){
+							$span2.html('密码验证通过');
+							$span2.css({"color":"green"});
+							passwordflag=true;
+						}else{
+							$span2.html('密码太low了');
+							passwordflag=false;
+						}
+					}else{
+						$span2.html('密码不能为空');
+						$span2.css({"color":"red"});
+						passwordflag=false;
+					}
+				})
+				
+				$psw.on('input',function(){
+					var regnum=/\d+/;//数字
+					var reglow=/[a-z]+/;//字母
+					var regup=/[A-Z]+/;//大写
+					var other=/[^0-9a-zA-Z]/;//混合数据
+					var num=0;
+					if($(this).val().length>8 && $(this).val().length<16){
+						if(regnum.test($(this).val())){
+							num++;
+						}
+						if(reglow.test($(this).val())){
+							num++;
+						}
+						if(regup.test($(this).val())){
+							num++;
+						}
+						if(other.test($(this).val())){
+							num++;
+						}
+						switch(num){
+							case 1: $span2.html('密码强度：弱'); $span2.css({"color":"red"}); passwordflag=false; break;
+							
+							case 2: $span2.html('密码强度：中'); $span2.css({"color":"orange"});passwordflag=true; break;
+							case 4: $span2.html('密码强度：强'); $span2.css({"color":"green"});passwordflag=true; break;
+						}
+					}else{
+						$span2.html('密码长度为8-16位之间');
+						$span2.css({"color":"red"});
+						passwordflag=false;
+					}
+				})
+				
+				/* $('.quc-checkbox').on('change',function(){
+					if($('.end').find('input:checkbox').prop('checked')){
+						$('.quc-checkbox').attr("disabled",false); 
+					}
+				}) */
+				
+				
+				//表单提交
+				$formbox.on('submit',function(){
+					if($tel.val()==''){
+						$span1.html('手机号不能为空');
+						$span1.css({"color":"red"});
+						telflag=false;
+					}
+					if($psw.val()==''){
+						$span2.html('密码不能为空');
+						$span2.css({"color":"red"});
+						passwordflag=false;
+					}
+					
+					if(!telflag || !passwordflag){
+						return false;
+					}
+					
+				})
+				
+				
+				
+			})
+		})();
 		
 		
 		
@@ -19,7 +133,7 @@ define(['config'],function(){
 		var $formbox=$('#formbox');
 		var $tellock=true;
 		
-		$tel.focusout(function(){
+		$tel.on('blur',function(){
 			$.ajax({
 				type:'post',
 				url:'http://10.31.162.161/html-5/360store/php/registor.php',
@@ -29,18 +143,19 @@ define(['config'],function(){
 			}).done(function(data){
 				//console.log(data);
 				if(!data){
+					/* telflag=true;
 					$span1.html('手机号可用');
-					$span1.css({"color":"green"});
+					$span1.css({"color":"green"}); */
 					$tellock=true;
 				}else{
-					$span1.html('该手机号已被注册');
+					$span1.html('该手机号为空或已被注册');
 					$span1.css({"color":"red"});
 					$tellock=false;
 				}
 			})
 		})
 		
-		$formbox.submit(function(){
+		$formbox.on('submit',function(){
 			if(!$tellock){
 				return false;
 			}
@@ -51,9 +166,7 @@ define(['config'],function(){
 		var $passw=$('.passw');
 		var $loging=$('.loging');
 		
-		/* if($user.val()='' || $passw.val('')){
-			
-		} */
+		
 		$loging.on('click',function(){
 			$.ajax({
 				type:'post',
@@ -65,10 +178,10 @@ define(['config'],function(){
 			}).done(function(date){
 				if(!date){
 					alert('登录失败');
-					$passw.val('');
+					$passw.val();
 				}else{
 					alert('登录成功');
-					location.href='http://10.31.162.161/html-5/360store/src/index1.html';
+					location.href='http://10.31.162.161/html-5/360store/src/index.html';
 					$.cookie('username',$user.val(),{expires:10});
 				}
 			})

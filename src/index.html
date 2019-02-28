@@ -33,12 +33,18 @@
 		</style>
 	</head>
 
-	<body>
+	<body style="background: #f5f5f5;">
 		<!-- 顶部广告 -->
 		<div class="adver">
 			<a href="javascript:;"><img src="http://img.i360mall.com/744f58a1-3634-4ea6-8869-ce06a69a10f5.jpg" style="display: block;width: 100%; height: 80px;"></a>
 		</div>
-
+		<!-- 悬浮搜索框 -->
+		<div class="box1">
+			<form action="" method="" class="formstyle formstyle1">
+				<input type="text" name="sousuo" id="put1" value="" />
+				<input type="button" name="" id="put2" value="" />
+			</form>
+		</div>
 		<!--页面顶部-->
 		<div class="top">
 			<div class="weaper-center clear">
@@ -58,8 +64,10 @@
 						</div>
 					</li>
 					<li class="float-right"><a href="">我的订单</a></li>
-					<li class="float-right"><a href="">注册</a></li>
-					<li class="float-right"><a href="">登录</a></li>
+					<li class="float-right zhuce"><a href="http://10.31.162.161/html-5/360store/src/registor.html" target="_blank">注册</a></li>
+					<li class="float-right dl"><a href="http://10.31.162.161/html-5/360store/src/login.html" target="_blank">登录</a></li>
+					<li class="float-right admin"><a href=""></a></li>
+					<li class="float-right esc"><a href=""></a></li>
 				</ul>
 			</div>
 		</div>
@@ -93,21 +101,91 @@
 					</div>
 					<!-- 购物车 -->
 					<div class="car">
-						<a href="" class="car-a">
+						<a href="http://10.31.162.161/html-5/360store/src/cart.html" class="car-a">
 							<i></i>
-							我的购物车(0)
+							我的购物车<span></span>
 						</a>
 						<div class="subcar">
 							<!-- 请<a href="">登录</a>后查看您的购物车 -->
 						</div>
+					</div>
+					
+					
+					<div class="d-img">
+						<img src="http://img.i360mall.com/273891e0-f845-446b-8f82-9984d5fc0534.gif" alt="">
 					</div>
 
 				</div>
 
 				<!-- 头部内导航栏 -->
 				<div class="nav">
+					<!-- 轮播二级 -->
+					<div id="subnav">
+						<ul>
+							<li>
+								<a href="">
+									<i class="iconfont"></i>
+									<span>数码</span>
+								</a>
+								<!-- 二级菜单 -->
+								<div class="popbox">
+									<p>智能设备</p>
+									<ol>
+										<li>
+											<a href="">
+												<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
+												<span>儿童手表</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
+												<span>儿童手表</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
+												<span>儿童手表</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
+												<span>儿童手表</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
+												<span>儿童手表</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
+												<span>儿童手表</span>
+											</a>
+										</li>
+									</ol>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<i class="iconfont"></i>
+									<span>手机/配件</span>
+								</a>
+					
+							</li>
+						</ul>
+					</div>
+					<!-- 二级菜单结束 -->
+					<div class="second">
 					<ul>
-						<li><a href="">全部智能酷品</a></li>
+						<li class="subs"><a href="">全部智能酷品</a>
+						
+						
+						</li>
 						<li><a href="">手机</a></li>
 						<li class="n1"><a href="">行车记录仪</a>
 							<div class="subli">
@@ -148,13 +226,14 @@
 						<li><a href="">路由器</a></li>
 						<li><a href="">扫地机器人</a></li>
 					</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<!--轮播图广告-->
 		<div class="slideshow">
-			<div class="lunbo">
+			<div class="lunbo clear">
 
 				<a href="" style="opacity: 1;">
 					<img src="http://img.i360mall.com/643fae0f-66f8-41c3-a208-d659bf647010.jpg" alt="">
@@ -175,65 +254,7 @@
 			</div>
 
 			<!-- 轮播图上面的导航菜单 -->
-			<div class="subnav">
-				<ul>
-					<li>
-						<a href="">
-							<i class="iconfont"></i>
-							<span>数码</span>
-						</a>
-						<!-- 二级菜单 -->
-						<div class="popbox">
-							<p>智能设备</p>
-							<ol>
-								<li>
-									<a href="">
-										<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
-										<span>儿童手表</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
-										<span>儿童手表</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
-										<span>儿童手表</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
-										<span>儿童手表</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
-										<span>儿童手表</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="http://img.i360mall.com/65e53525-48ad-4765-8373-d55577ba4850.jpg" alt="">
-										<span>儿童手表</span>
-									</a>
-								</li>
-							</ol>
-						</div>
-					</li>
-					<li>
-						<a href="">
-							<i class="iconfont"></i>
-							<span>手机/配件</span>
-						</a>
-
-					</li>
-				</ul>
-			</div>
+			
 		</div>
 
 
@@ -425,8 +446,8 @@
 						</a>
 					</div>
 				</div>
-				<ol class="section-ol clear">
-					<li>
+				<ol class="section-ol section-ol-1 clear">
+					<!-- <li>
 						<a href="">
 							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
@@ -454,6 +475,34 @@
 							<span>￥1499.00</span>
 						</a>
 					</li>
+					<li>
+						<a href="">
+							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<p>360手机 N7 Pro6GB+64GB</p>
+							<span>￥1499.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<p>360手机 N7 Pro6GB+64GB</p>
+							<span>￥1499.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<p>360手机 N7 Pro6GB+64GB</p>
+							<span>￥1499.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<p>360手机 N7 Pro6GB+64GB</p>
+							<span>￥1499.00</span>
+						</a>
+					</li> -->
 				</ol>
 			</div>
 		</div>
@@ -465,61 +514,61 @@
 				<div class="s1 clear">
 					<div class="s1-top">
 						<a href="">
-							<img src="http://img.i360mall.com/0cee1f1a-7a24-406e-a83a-8c83a168d68c.jpg" alt="">
+							<img class="lazy" data-original="http://img.i360mall.com/0cee1f1a-7a24-406e-a83a-8c83a168d68c.jpg" alt="">
 						</a>
 					</div>
 					<div class="s1-bot">
 						<a href="">
-							<img src="http://img13.360buyimg.com/N2/jfs/t21307/138/587170656/94563/6bbee897/5b4dc852Nea1581ef.jpg" alt="">
+							<img class="lazy" data-original="http://img13.360buyimg.com/N2/jfs/t21307/138/587170656/94563/6bbee897/5b4dc852Nea1581ef.jpg" alt="">
 						</a>
 					</div>
 				</div>
 				<ol class="section-ol clear">
 					<li>
 						<a href="">
-							<i><img src="http://img12.360buyimg.com/N2/jfs/t16870/365/1270354258/70466/bfa34a6c/5ac4ad7aN31959bfb.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t16870/365/1270354258/70466/bfa34a6c/5ac4ad7aN31959bfb.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img13.360buyimg.com/N2/jfs/t20902/58/2267896753/83056/2f2d082/5b4dc7a1Ne8125d43.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img10.360buyimg.com/N2/jfs/t15304/201/2650927202/179597/f1a2040d/5aaf88dfN75d017c5.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img14.360buyimg.com/N2/jfs/t19201/84/1261088815/100236/91e5c7d6/5ac4a60eN87707404.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t3547/262/2798701267/74986/eac9d3f0/585d4d50N41ecf8b7.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t3547/262/2798701267/74986/eac9d3f0/585d4d50N41ecf8b7.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img13.360buyimg.com/N2/jfs/t5767/130/5926234876/77602/68b740d5/5966da63N242d73f6.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
@@ -535,54 +584,68 @@
 				<div class="s1 clear">
 					<div class="s1-top">
 						<a href="">
-							<img src="http://img.i360mall.com/e002ca77-43d0-4295-ae6e-d209090b4f9b.jpg" alt="">
+							<img class="lazy" data-original="http://img.i360mall.com/e002ca77-43d0-4295-ae6e-d209090b4f9b.jpg" alt="">
 						</a>
 					</div>
 					<div class="s1-bot">
 						<a href="">
-							<img src="http://img12.360buyimg.com/N2/jfs/t6016/174/1173050689/105522/8ef291af/5930c9a1N050ba6c5.jpg" alt="">
+							<img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t6016/174/1173050689/105522/8ef291af/5930c9a1N050ba6c5.jpg" alt="">
 						</a>
 					</div>
 				</div>
 				<ol class="section-ol clear">
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t6016/174/1173050689/105522/8ef291af/5930c9a1N050ba6c5.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img13.360buyimg.com/N2/jfs/t3511/329/870984430/172906/bc3526bc/5817039cN5b5a9930.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img  class="lazy"data-original="http://img13.360buyimg.com/N2/jfs/t2803/225/2369244403/272133/b5aeb8d9/57621511N5cbafb8a.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img.i360mall.com/66d3f60d-ddb9-4b3d-b89b-17c5a5ec33dc.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t17980/181/2395461446/169113/56ffaea6/5af3b45aN3391392a.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img14.360buyimg.com/N2/jfs/t3448/115/304606616/252246/a8e91519/58074aeaN63a3a8bb.jpg" alt=""></i>
+							<p>360手机 N7 Pro6GB+64GB</p>
+							<span>￥1499.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t16933/28/1142030904/122715/79412bef/5abc9372N93640c16.jpg" alt=""></i>
+							<p>360手机 N7 Pro6GB+64GB</p>
+							<span>￥1499.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i><img class="lazy" data-original="http://img12.360buyimg.com/N2/jfs/t2851/245/2801657732/87718/2f6fae74/5776240eN9f9baf75.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
@@ -598,26 +661,26 @@
 				<div class="s1 clear">
 					<div class="s1-top">
 						<a href="">
-							<img src="http://img14.360buyimg.com/N2/jfs/t20074/37/60006890/165536/1ddbdb3/5ae2c73eN34022cce.jpg" alt="">
+							<img class="lazy" data-original="http://img14.360buyimg.com/N2/jfs/t20074/37/60006890/165536/1ddbdb3/5ae2c73eN34022cce.jpg" alt="">
 						</a>
 					</div>
 					<div class="s1-bot">
 						<a href="">
-							<img src="http://img13.360buyimg.com/N2/jfs/t19552/294/2511241118/86562/e3125faf/5afd1e99N0dbc903f.jpg" alt="">
+							<img class="lazy" data-original="http://img13.360buyimg.com/N2/jfs/t19552/294/2511241118/86562/e3125faf/5afd1e99N0dbc903f.jpg" alt="">
 						</a>
 					</div>
 				</div>
 				<ol class="section-ol clear">
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
+							<i><img class="lazy" data-original="http://img11.360buyimg.com/N2/jfs/t22558/89/2343666456/198377/2e0dea9e/5b7b8cd1Nb4f33692.jpg" alt=""></i>
 							<p>360手机 N7 Pro6GB+64GB</p>
 							<span>￥1499.00</span>
 						</a>
