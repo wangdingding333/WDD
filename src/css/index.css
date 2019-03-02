@@ -150,6 +150,7 @@ body {
   text-decoration: none;
   display: inline-block;
   margin: 0 5px;
+  color: #999;
 }
 .search .search-p a:hover {
   color: #f10215;

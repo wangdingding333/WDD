@@ -89,7 +89,7 @@ define(['config'], function() {
 			}
 		})
 
-		//3.幻灯片效果
+		//3.幻灯片效果,只有左右滑动效果
 		var $box = $('.bigbox');
 		var $banner = $('.lun-ol');
 		var $pics = $('.lun-ol li');
@@ -127,14 +127,14 @@ define(['config'], function() {
 			$.each(data, function(index, value) {
 				$html +=
 					`
-					<li>
-						<a href="http://10.31.162.161/html-5/360store/src/details.html?sid=${value.sid}" target="_blank">
-							<i><img src="${value.url}"/></i>
-							<p>${value.title}</p>
-							<span>￥${value.price}</span>
-						</a>
-					</li>
-				`;
+						<li>
+							<a href="http://10.31.162.161/html-5/360store/src/details.html?sid=${value.sid}" target="_blank">
+								<i><img src="${value.url}"/></i>
+								<p>${value.title}</p>
+								<span>￥${value.price}</span>
+							</a>
+						</li>
+					`;
 			});
 			$('.section-ol-1').html($html);
 		})
@@ -149,5 +149,6 @@ define(['config'], function() {
 				});
 			});
 		});
+		
 	})
 });

@@ -76,8 +76,8 @@ define(['config'],function(){
 						}
 						switch(num){
 							case 1: $span2.html('密码强度：弱'); $span2.css({"color":"red"}); passwordflag=false; break;
-							
-							case 2: $span2.html('密码强度：中'); $span2.css({"color":"orange"});passwordflag=true; break;
+							case 2:
+							case 3: $span2.html('密码强度：中'); $span2.css({"color":"orange"});passwordflag=true; break;
 							case 4: $span2.html('密码强度：强'); $span2.css({"color":"green"});passwordflag=true; break;
 						}
 					}else{
